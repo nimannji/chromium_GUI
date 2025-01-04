@@ -61,7 +61,7 @@ sudo ufw reload
 ```
 Now we want to install chromium on the vps
 When you login form windows remote desktop connection as root user and trying to install chromium, you get an error, because it goes against Chromium's security measures, so we should switch to a regular user. You can add a regular user in putty
-1. Create a new ordinary username
+1. Create a new ordinary username(you could use your preferred username instead of yourusername and replace it in the all following codes instead of yourusername)
 ```
 useradd yourusername
 passwd yourusername
