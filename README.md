@@ -3,7 +3,6 @@ Installing chromium in ubuntu with GUI
 we want to run chromium on a vps using XFCE GUI panel and XRDP connection and windows remote desktop.
 
 1. Update and Upgrade Your VPS
-
 ```
 sudo apt update
 sudo apt upgrade -y
