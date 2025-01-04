@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-2.Install XFCE Desktop Environment
+2. Install XFCE Desktop Environment
 ```
 sudo apt install xfce4 xfce4-goodies -y
 ```
@@ -26,12 +26,12 @@ sudo systemctl enable xrdp
 
 Now we need to switch to Xorg as the default display server 
 
-5.Create an XRDP startup script
+5. Create an XRDP startup script
 ```
 sudo nano /etc/xrdp/startwm.sh 
 ```
 
-6.Add the following content to the end of startwm.sh file
+6. Add the following content to the end of startwm.sh file
 ```
 #!/bin/sh
 
@@ -49,12 +49,12 @@ startxfce4
 sudo chmod +x /etc/xrdp/startwm.sh
 ```
 
-8.Restart XRDP
+8. Restart XRDP
 ```
 sudo systemctl restart xrdp
 ```
 
-9.(optional) Ensure that your VPS firewall (mine was not active) is allowing connections on port 3389 (the default XRDP port)
+9. (optional) Ensure that your VPS firewall (mine was not active) is allowing connections on port 3389 (the default XRDP port)
 ```
 sudo ufw allow 3389
 sudo ufw reload
